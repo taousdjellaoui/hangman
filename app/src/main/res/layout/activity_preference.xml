@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PreferenceActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/pr_f_rence"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="116dp"
+        android:layout_weight=".2"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/langue_d_interface"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFrancais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/french" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/english" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:gravity="clip_vertical"
+                android:text="@string/niveau_de_difficult"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFacile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/facile" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMoyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/moyen" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDifficile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btnDictionnaire"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:text="@string/dictionnary" />
+
+        <Button
+            android:id="@+id/btnRetourner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:backgroundTint="@color/blue"
+            android:text="@string/retour" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ProjetFinalPendu</string>
+    <string name="trouver_ce_mot">Find this word:</string>
+    <string name="score">Score:</string>
+    <string name="jeu_du_pendu">Hanged Man Game</string>
+    <string name="debuter_jeu">Start game</string>
+    <string name="rejouer">Replay</string>
+    <string name="menu">menu</string>
+    <string name="jouer">Play</string>
+    <string name="pr_f_rence">Preference</string>
+    <string name="historique">History</string>
+    <string name="bienvenue_au_jeu_du_pendu">Welcome to the Hanging Man Game!</string>
+    <string name="langue_d_interface">Interface language:</string>
+    <string name="moyen">Medium</string>
+    <string name="facile">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="niveau_de_difficult">Level difficulty:</string>
+    <string name="save">Save</string>
+    <string name="retour">Return</string>
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+    <string name="voulez_vous_red_marer_le_jeu">Do you want to restart the game ?</string>
+    <string name="Supprimer">Delete</string>
+    <string name="Annuler">Cancel</string>
+    <string name="Mot">Add or delete a word</string>
+    <string name="Dictionnaire">Dictionary</string>
+    <string name="Ajouter">Add</string>
+    <string name="fran_ais">French</string>
+    <string name="english">English</string>
+    <string name="dictionnary">Dictionnary</string>
+    <string name="niveau">Level</string>
+    <string name="temps">Time</string>
+    <string name="mot_jou">Word Played</string>
+    <string name="french">French</string>
+    <string-array name="langueSpinner">
+        <item>French</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="niveauSpinner">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

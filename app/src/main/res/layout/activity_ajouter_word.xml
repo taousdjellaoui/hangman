@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterMot">
+
+    <TextView
+        android:id="@+id/mot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:backgroundTint="#041FA3"
+        android:text="@string/Mot"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#041FA3"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motAddFr">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#041FA3"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#041FA3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#041FA3"
+                android:gravity="center_vertical"
+                android:text="@string/niveau_de_difficult"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioFacile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#041FA3"
+                android:text="@string/facile" />
+
+            <RadioButton
+                android:id="@+id/radioMoyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#041FA3"
+                android:text="@string/moyen" />
+
+            <RadioButton
+                android:id="@+id/radioDifficile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#041FA3"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/motAddEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:backgroundTint="#041FA3"
+        android:ems="8"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/motAddFr"
+        app:layout_constraintTop_toTopOf="@+id/motAddFr" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="252dp"
+        android:layout_weight="1"
+        android:backgroundTint="#041FA3"
+        android:gravity="center_vertical"
+        android:text="@string/langue_d_interface"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/motAddFr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        app:layout_constraintBottom_toTopOf="@+id/motAddEng"
+        app:layout_constraintStart_toStartOf="@+id/motAddEng" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/fran_ais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnSaving"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/btnSupprimer"
+        app:layout_constraintStart_toStartOf="@+id/btnSupprimer"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/Supprimer"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaving" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/blue"
+        android:text="@string/Annuler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSupprimer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

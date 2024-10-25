@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PenduActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/jeu_du_pendu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0:00:00"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/retourhome"
+            android:layout_width="41dp"
+            android:layout_height="33dp"
+            android:layout_margin="10dp"
+            android:onClick="retour"
+            app:srcCompat="@drawable/home2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:layout_weight="1"
+        android:backgroundTint="#7A7A2926"
+        android:clipToPadding="true"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/PenduImage"
+            android:layout_width="212dp"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/first" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/score"
+            android:textColor="#9C27B0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/trouver_ce_mot"
+            android:textColor="#3BCA41"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MotATrouverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Abutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Bbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="B"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Cbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Dbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Ebutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="E"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Fbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Gbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Hbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Ibutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Jbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Kbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Lbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Mbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="M"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Nbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="N"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Obutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="O"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Pbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="P"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Qbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Q"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Rbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="R"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Sbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="S"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Tbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="T"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Ubutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="U"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Vbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="V"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Wbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="W"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Xbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="X"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Ybutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Y"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Zbutton"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Z"
+            android:textAlignment="gravity"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/DebuterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/debuter_jeu"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
